@@ -15,13 +15,15 @@
  access_key: YourSuperSecretTenderlyAccessKey  
 ```
 5. Set the `tenderly` parameters for your username and project in `hardhat.config.js`.
-6. ***Don't forget to set the deployer's private key in your*** `.env` ***file!!!***  
-7. Run the Borrower Operations deployment script:  
-`$npx hardhat run ./scripts/1_deployBowOp.js --network rskSovrynTestnet`   
-8. Wait for the outcome: it should be: `Contract 0xYXZ...00X verified`  
-9. Run the Trove Manager deployment scripts:  
-`$npx hardhat run ./scripts/2_deployTrvMng.js --network rskSovrynTestnet`   
-10. Wait for the outcome: it should be: `Contract 0xYXZ...00X verified`  
+6. Compile the contracts:    
+`$ npx hardhat compile`  
+7. ***Don't forget to set the deployer's private key in your*** `.env` ***file!!!***  
+8. Run the Borrower Operations deployment script:  
+`$ npx hardhat run ./scripts/1_deployBowOp.js --network rskSovrynTestnet`   
+9. Wait for the outcome: it should be: `Contract 0xYXZ...00X verified`  
+10. Run the Trove Manager deployment scripts:  
+`$ npx hardhat run ./scripts/2_deployTrvMng.js --network rskSovrynTestnet`   
+11. Wait for the outcome: it should be: `Contract 0xYXZ...00X verified`  
 
 
 Happy coding!
